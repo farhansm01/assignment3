@@ -26,10 +26,45 @@
             background-image: linear-gradient(rgba(0, 0, 0, 0.5),
                        rgba(0, 0, 0, 0.5)), url("Images/4.png");
         }
+        
     </style>
 </head>
 <body class="font-manrope">
     <header>
+        <!-- Navbar -->
+        <nav class="lg:max-w-[1170px] mx-auto my-12">
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class="font-extrabold text-2xl lg:text-4xl">Hockey<span class="text-orange-600">'</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            
+            <div class="navbar-end flex gap-2 lg:gap-6 text-gray-500 text-xl lg:text-2xl">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <a class="btn bg-orange-600 text-white font-extrabold">Get Ticket</a>
+            </div>
+          </div>
+        </nav>
         <!-- banner container -->
         <div class="relative lg:max-w-[1170px] mx-auto">
                 <!-- Banner -->
@@ -260,7 +295,7 @@
             </div>
             
         </section>
-          <!-- FAQ section -->
+        <!-- FAQ section -->
         <section>
           <div class="text-center space-y-6 py-8 border-t-2 border-b-2 border-dashed border-gray-200 mt-24 mb-12">
               <h1 class="font-extrabold text-2xl lg:text-4xl">Clients Question</h1>
@@ -333,6 +368,100 @@
             </div>
           </div>
         </section>
+        <!-- Get In Touch section -->
+        <section>
+          <div class="text-center space-y-6 py-8 border-t-2 border-b-2 border-dashed border-gray-200 mt-24 mb-12">
+              <h1 class="font-extrabold text-2xl lg:text-4xl">Get In Touch</h1>
+              <p class="text-gray-500">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+          </div>
+          <div class="flex lg:flex-row flex-col gap-6">
+            <!-- Colored Box -->
+            <div class="border-2 border-gray-400 rounded-2xl p-4 m-4 lg:p-6 space-y-6 flex-2">
+              <!-- contact  -->
+              <div class="bg-[#F9FEF1] rounded-2xl space-y-6 p-8">
+                <img src="Images/Group 1171275317.png" alt="">
+                <p class="text-gray-400">Phone Number : </p>
+                <h4 class="text-xl font-extrabold">(+62) 123-321-543</h4>
+              </div>
+              <div class="bg-[#FFFCEF] rounded-2xl space-y-6 p-8">
+                <img src="Images/Group 1171275318.png" alt="">
+                <p class="text-gray-400">Email : </p>
+                <h4 class="text-xl font-extrabold">hockeys@support.com</h4>
+              </div>
+              <div class="bg-[#F0F6FE] rounded-2xl space-y-6 p-8">
+                <img src="Images/Group 1171275321.png" alt="">
+                <p class="text-gray-400">Location : </p>
+                <h4 class="text-xl font-extrabold">152/1 Mohakhali Wireless Gate</h4>
+              </div>
+            </div>
+            <!-- form -->
+            <div class=" m-4 grid gap-5 lg:grid-cols-2 grid-cols-1 flex-1">
+                <div>
+                  <span class="block text-xl font-extrabold mb-4">Your Name</span>
+                  <input type="text" placeholder="Enter your full name" class="bg-gray-200 input input-bordered w-full" />
+                </div>
+                <div>
+                  <span class="block text-xl font-extrabold mb-4">Your Email</span>
+                  <input type="text" placeholder="Enter your email" class="bg-gray-200 input input-bordered w-full" />
+                </div>
+                <div>
+                  <span class="block text-xl font-extrabold mb-4">Subject</span>
+                  <input type="text" placeholder="Enter your subject" class="bg-gray-200 input input-bordered w-full" />
+                </div>
+                <div>
+                  <span class="block text-xl font-extrabold mb-4">Phone Number</span>
+                  <input type="text" placeholder="Enter your phone number" class="bg-gray-200 input input-bordered w-full" />
+                </div>
+                <div class="lg:col-span-2">
+                  <span class="block text-xl font-extrabold mb-4">Message</span>
+                  <textarea placeholder="Write your message" class=" bg-gray-200 textarea textarea-bordered textarea-lg w-full size-full" ></textarea>
+                </div>
+                <button class="btn mt-16 w-full lg:col-span-2 bg-red-500 text-white block">Send Message</button>
+            </div>
+          </div>
+          <div class="space-y-6 p-9 mt-12 mx-4 bg-gray-200 rounded-2xl text-center">
+             <h2 class="text-2xl font-extrabold">Social Media</h2>
+             <div class="flex justify-center">
+              <img src="Images/Social.svg" alt="">
+             </div> 
+          </div>
+         
+        </section>
     </main>
+    <footer class="footer p-10 bg-black  text-white mt-24">
+      <aside class="space-y-4">
+        <h6 class="font-extrabold text-3xl text-white">Get In Touch</h6> 
+        <p class="text-gray-400">Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam proin.</p>
+        <div class="flex gap-1 items-center">
+          <img src="Images/Frame.png" alt=""><span class="text-gray-400">hockeys@support.com</span>
+        </div>
+        <div class="flex gap-1 items-center">
+          <img src="Images/Frame (1).png" alt=""><span class="text-gray-400">(+62) 123-321-543</span>
+        </div>
+      </aside> 
+      <nav class="space-y-3">
+        <h6 class="font-extrabold text-xl mb-2">Company</h6> 
+        <a class="link link-hover text-gray-400">About us</a>
+        <a class="link link-hover text-gray-400">Leadership</a>
+        <a class="link link-hover text-gray-400">Careers</a>
+        <a class="link link-hover text-gray-400">News & Article</a>
+        <a class="link link-hover text-gray-400">Legal Notice</a>
+      </nav> 
+      <nav class="space-y-3">
+        <h6 class="font-extrabold text-xl mb-2">Support</h6>
+        <a class="link link-hover text-gray-400">Help Center</a>
+        <a class="link link-hover text-gray-400">FAQ</a>
+        <a class="link link-hover text-gray-400">Ticket Support</a>
+        <a class="link link-hover text-gray-400">Contact Us</a>
+      </nav> 
+      <nav class="space-y-3">
+        <h6 class="font-extrabold text-xl mb-2">Services</h6> 
+        <a class="link link-hover text-gray-400">Academy</a>
+        <a class="link link-hover text-gray-400">Group Lesson</a>
+        <a class="link link-hover text-gray-400">Private Lesson</a>
+        <a class="link link-hover text-gray-400">Hockeys for kids</a>
+        <a class="link link-hover text-gray-400">Hockeys for Adult</a>
+      </nav>
+    </footer>
 </body>
 </html>
